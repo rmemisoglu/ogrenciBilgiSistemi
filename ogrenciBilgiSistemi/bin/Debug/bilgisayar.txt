@@ -1,0 +1,17 @@
+4001,Algoritma ve Programlama,4,1,1001
+4002,Bilgisayar Bilimlerine Giris,2,1,1003
+4003,Fizik,4,1,1002
+4004,Matematik,3,1,1001
+4005,Nesneye Dayali Programlama,4,2,1004
+4006,Ayrik Islemler,2,2,1006
+4007,Lineer Cebir,2,2,1002
+4008,Veritabanina Giris,3,2,1005
+4009,Bilgisayar Aglari,3,3,1004
+4010,Sinyaller ve Sistemler,4,3,1006
+4011,Gorsel Programlama,3,3,1001
+4012,Olasilik ve Istatistik,2,3,1003
+4013,Makine Ogrenmesi,3,4,1005
+4014,Muhendislik Ekonomisi,2,4,1006
+4015,Gomulu Sistemler,4,4,1004
+4016,Paralel Programlama,3,4,1005
+4017,Yazýlým Mühendisliði,3,3,1002

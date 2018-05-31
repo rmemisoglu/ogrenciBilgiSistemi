@@ -1,0 +1,7 @@
+Kali,GÜRKAHRAMAN,1001
+Halil,ARSLAN,1002
+Hidayet,TAKCÝ,1003
+Emre,ÜNSAL,1004
+Oðuz,KAYNAR,1005
+Ahmet Gürkan,YÜKSEK,1006
+Hamdi Doðan,KARKI,1007
