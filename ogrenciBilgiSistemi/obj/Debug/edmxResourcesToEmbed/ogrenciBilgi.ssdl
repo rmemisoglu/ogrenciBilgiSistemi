@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bilgiSistemiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="alınandersler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ogrNo" Type="int" />
+    <Property Name="ders_kodu" Type="int" />
+  </EntityType>
+  <EntityType Name="bolum">
+    <Key>
+      <PropertyRef Name="bolum_kodu" />
+    </Key>
+    <Property Name="bolum_kodu" Type="int" Nullable="false" />
+    <Property Name="bolum_adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="o_id" Type="int" />
+  </EntityType>
+  <EntityType Name="ders">
+    <Key>
+      <PropertyRef Name="ders_kodu" />
+    </Key>
+    <Property Name="ders_kodu" Type="int" Nullable="false" />
+    <Property Name="ders_adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="kredi" Type="int" />
+    <Property Name="sinif" Type="int" />
+    <Property Name="egitmen_id" Type="int" />
+  </EntityType>
+  <EntityType Name="devamsizlik">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ogrNo" Type="int" />
+    <Property Name="devamsiz" Type="int" />
+    <Property Name="ders_kodu" Type="int" />
+  </EntityType>
+  <EntityType Name="egitmen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="egitmen_kodu" Type="int" />
+  </EntityType>
+  <EntityType Name="kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ogrenci_sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="egitmen_sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="ogrenci_no" Type="int" />
+    <Property Name="egitmen_kod" Type="int" />
+  </EntityType>
+  <EntityType Name="not">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ogrNo" Type="int" />
+    <Property Name="vize" Type="int" />
+    <Property Name="final" Type="int" />
+    <Property Name="but" Type="int" />
+    <Property Name="ders_kodu" Type="int" />
+  </EntityType>
+  <EntityType Name="ogrenci">
+    <Key>
+      <PropertyRef Name="numara" />
+    </Key>
+    <Property Name="numara" Type="int" Nullable="false" />
+    <Property Name="ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="bolum" Type="int" />
+    <Property Name="sinif" Type="int" />
+  </EntityType>
+  <Association Name="FK_alınandersler_ToTable">
+    <End Role="ogrenci" Type="Self.ogrenci" Multiplicity="0..1" />
+    <End Role="alınandersler" Type="Self.alınandersler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ogrenci">
+        <PropertyRef Name="numara" />
+      </Principal>
+      <Dependent Role="alınandersler">
+        <PropertyRef Name="ogrNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alınandersler_ToTable_1">
+    <End Role="ders" Type="Self.ders" Multiplicity="0..1" />
+    <End Role="alınandersler" Type="Self.alınandersler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ders">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="alınandersler">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bolum_Toogrenci">
+    <End Role="ogrenci" Type="Self.ogrenci" Multiplicity="0..1" />
+    <End Role="bolum" Type="Self.bolum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ogrenci">
+        <PropertyRef Name="numara" />
+      </Principal>
+      <Dependent Role="bolum">
+        <PropertyRef Name="o_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ders_ToTable_1">
+    <End Role="egitmen" Type="Self.egitmen" Multiplicity="0..1" />
+    <End Role="ders" Type="Self.ders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="egitmen">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ders">
+        <PropertyRef Name="egitmen_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_devamsizlik_ToTable">
+    <End Role="ders" Type="Self.ders" Multiplicity="0..1" />
+    <End Role="devamsizlik" Type="Self.devamsizlik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ders">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="devamsizlik">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_not_ToTable">
+    <End Role="ders" Type="Self.ders" Multiplicity="0..1" />
+    <End Role="not" Type="Self.not" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ders">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="not">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bilgiSistemiModelStoreContainer">
+    <EntitySet Name="alınandersler" EntityType="Self.alınandersler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bolum" EntityType="Self.bolum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ders" EntityType="Self.ders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="devamsizlik" EntityType="Self.devamsizlik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="egitmen" EntityType="Self.egitmen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kullanici" EntityType="Self.kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="not" EntityType="Self.not" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ogrenci" EntityType="Self.ogrenci" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_alınandersler_ToTable" Association="Self.FK_alınandersler_ToTable">
+      <End Role="ogrenci" EntitySet="ogrenci" />
+      <End Role="alınandersler" EntitySet="alınandersler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_alınandersler_ToTable_1" Association="Self.FK_alınandersler_ToTable_1">
+      <End Role="ders" EntitySet="ders" />
+      <End Role="alınandersler" EntitySet="alınandersler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bolum_Toogrenci" Association="Self.FK_bolum_Toogrenci">
+      <End Role="ogrenci" EntitySet="ogrenci" />
+      <End Role="bolum" EntitySet="bolum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ders_ToTable_1" Association="Self.FK_ders_ToTable_1">
+      <End Role="egitmen" EntitySet="egitmen" />
+      <End Role="ders" EntitySet="ders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_devamsizlik_ToTable" Association="Self.FK_devamsizlik_ToTable">
+      <End Role="ders" EntitySet="ders" />
+      <End Role="devamsizlik" EntitySet="devamsizlik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_not_ToTable" Association="Self.FK_not_ToTable">
+      <End Role="ders" EntitySet="ders" />
+      <End Role="not" EntitySet="not" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

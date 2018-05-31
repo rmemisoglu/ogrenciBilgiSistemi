@@ -1,0 +1,64 @@
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi.mdf
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi_log.ldf
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe.config
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csprojResolveAssemblyReference.cache
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.Properties.Resources.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.sınavNot.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.GenerateResource.Cache
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.exe
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.egitmenGiris.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.ogrenciGiris.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.dll
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.xml
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.egitmenGiris.resources
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.ogrenciGiris.resources
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.Properties.Resources.resources
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.sınavNot.resources
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.exe
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi.mdf
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi_log.ldf
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe.config
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi.mdf
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\bilgiSistemi_log.ldf
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe.config
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.exe
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.xml
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.egitmenGiris.resources
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.ogrenciGiris.resources
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.Properties.Resources.resources
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.sınavNot.resources
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.exe
+C:\Users\USER\Documents\Visual Studio 2017\Projects\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.pdb
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.egitmengirissayfası.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.Giris.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.ogrencigirissayfasi.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.dersEkle.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.notEkle.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.egitmenEkle.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.devamsizlikEkle.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.ogrenciEkle.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.dersSecim.resources
+C:\Users\pc\source\repos\ogrenciBilgiSistemi\ogrenciBilgiSistemi\obj\Debug\ogrenciBilgiSistemi.devamsizlikBilgi.resources

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bilgiSistemiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bilgiSistemiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="alınandersler" EntityType="bilgiSistemiModel.alınandersler" />
+    <EntitySet Name="bolums" EntityType="bilgiSistemiModel.bolum" />
+    <EntitySet Name="ders" EntityType="bilgiSistemiModel.der" />
+    <EntitySet Name="devamsizliks" EntityType="bilgiSistemiModel.devamsizlik" />
+    <EntitySet Name="egitmen" EntityType="bilgiSistemiModel.egitman" />
+    <EntitySet Name="kullanicis" EntityType="bilgiSistemiModel.kullanici" />
+    <EntitySet Name="nots" EntityType="bilgiSistemiModel.not" />
+    <EntitySet Name="ogrencis" EntityType="bilgiSistemiModel.ogrenci" />
+    <AssociationSet Name="FK_alınandersler_ToTable" Association="bilgiSistemiModel.FK_alınandersler_ToTable">
+      <End Role="ogrenci" EntitySet="ogrencis" />
+      <End Role="alınandersler" EntitySet="alınandersler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_alınandersler_ToTable_1" Association="bilgiSistemiModel.FK_alınandersler_ToTable_1">
+      <End Role="der" EntitySet="ders" />
+      <End Role="alınandersler" EntitySet="alınandersler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bolum_Toogrenci" Association="bilgiSistemiModel.FK_bolum_Toogrenci">
+      <End Role="ogrenci" EntitySet="ogrencis" />
+      <End Role="bolum" EntitySet="bolums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ders_ToTable_1" Association="bilgiSistemiModel.FK_ders_ToTable_1">
+      <End Role="egitman" EntitySet="egitmen" />
+      <End Role="der" EntitySet="ders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_devamsizlik_ToTable" Association="bilgiSistemiModel.FK_devamsizlik_ToTable">
+      <End Role="der" EntitySet="ders" />
+      <End Role="devamsizlik" EntitySet="devamsizliks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_not_ToTable" Association="bilgiSistemiModel.FK_not_ToTable">
+      <End Role="der" EntitySet="ders" />
+      <End Role="not" EntitySet="nots" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="alınandersler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrNo" Type="Int32" />
+    <Property Name="ders_kodu" Type="Int32" />
+    <NavigationProperty Name="ogrenci" Relationship="bilgiSistemiModel.FK_alınandersler_ToTable" FromRole="alınandersler" ToRole="ogrenci" />
+    <NavigationProperty Name="der" Relationship="bilgiSistemiModel.FK_alınandersler_ToTable_1" FromRole="alınandersler" ToRole="der" />
+  </EntityType>
+  <EntityType Name="bolum">
+    <Key>
+      <PropertyRef Name="bolum_kodu" />
+    </Key>
+    <Property Name="bolum_kodu" Type="Int32" Nullable="false" />
+    <Property Name="bolum_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="o_id" Type="Int32" />
+    <NavigationProperty Name="ogrenci" Relationship="bilgiSistemiModel.FK_bolum_Toogrenci" FromRole="bolum" ToRole="ogrenci" />
+  </EntityType>
+  <EntityType Name="der">
+    <Key>
+      <PropertyRef Name="ders_kodu" />
+    </Key>
+    <Property Name="ders_kodu" Type="Int32" Nullable="false" />
+    <Property Name="ders_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kredi" Type="Int32" />
+    <Property Name="sinif" Type="Int32" />
+    <Property Name="egitmen_id" Type="Int32" />
+    <NavigationProperty Name="alınandersler" Relationship="bilgiSistemiModel.FK_alınandersler_ToTable_1" FromRole="der" ToRole="alınandersler" />
+    <NavigationProperty Name="egitman" Relationship="bilgiSistemiModel.FK_ders_ToTable_1" FromRole="der" ToRole="egitman" />
+    <NavigationProperty Name="devamsizliks" Relationship="bilgiSistemiModel.FK_devamsizlik_ToTable" FromRole="der" ToRole="devamsizlik" />
+    <NavigationProperty Name="nots" Relationship="bilgiSistemiModel.FK_not_ToTable" FromRole="der" ToRole="not" />
+  </EntityType>
+  <EntityType Name="devamsizlik">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrNo" Type="Int32" />
+    <Property Name="devamsiz" Type="Int32" />
+    <Property Name="ders_kodu" Type="Int32" />
+    <NavigationProperty Name="der" Relationship="bilgiSistemiModel.FK_devamsizlik_ToTable" FromRole="devamsizlik" ToRole="der" />
+  </EntityType>
+  <EntityType Name="egitman">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="egitmen_kodu" Type="Int32" />
+    <NavigationProperty Name="ders" Relationship="bilgiSistemiModel.FK_ders_ToTable_1" FromRole="egitman" ToRole="der" />
+  </EntityType>
+  <EntityType Name="kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ogrenci_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="egitmen_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrenci_no" Type="Int32" />
+    <Property Name="egitmen_kod" Type="Int32" />
+  </EntityType>
+  <EntityType Name="not">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrNo" Type="Int32" />
+    <Property Name="vize" Type="Int32" />
+    <Property Name="final" Type="Int32" />
+    <Property Name="but" Type="Int32" />
+    <Property Name="ders_kodu" Type="Int32" />
+    <NavigationProperty Name="der" Relationship="bilgiSistemiModel.FK_not_ToTable" FromRole="not" ToRole="der" />
+  </EntityType>
+  <EntityType Name="ogrenci">
+    <Key>
+      <PropertyRef Name="numara" />
+    </Key>
+    <Property Name="numara" Type="Int32" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sinif" Type="Int32" />
+    <NavigationProperty Name="alınandersler" Relationship="bilgiSistemiModel.FK_alınandersler_ToTable" FromRole="ogrenci" ToRole="alınandersler" />
+    <NavigationProperty Name="bolums" Relationship="bilgiSistemiModel.FK_bolum_Toogrenci" FromRole="ogrenci" ToRole="bolum" />
+    <Property Name="bolum" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_alınandersler_ToTable">
+    <End Type="bilgiSistemiModel.ogrenci" Role="ogrenci" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.alınandersler" Role="alınandersler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ogrenci">
+        <PropertyRef Name="numara" />
+      </Principal>
+      <Dependent Role="alınandersler">
+        <PropertyRef Name="ogrNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alınandersler_ToTable_1">
+    <End Type="bilgiSistemiModel.der" Role="der" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.alınandersler" Role="alınandersler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="der">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="alınandersler">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bolum_Toogrenci">
+    <End Type="bilgiSistemiModel.ogrenci" Role="ogrenci" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.bolum" Role="bolum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ogrenci">
+        <PropertyRef Name="numara" />
+      </Principal>
+      <Dependent Role="bolum">
+        <PropertyRef Name="o_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ders_ToTable_1">
+    <End Type="bilgiSistemiModel.egitman" Role="egitman" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.der" Role="der" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="egitman">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="der">
+        <PropertyRef Name="egitmen_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_devamsizlik_ToTable">
+    <End Type="bilgiSistemiModel.der" Role="der" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.devamsizlik" Role="devamsizlik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="der">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="devamsizlik">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_not_ToTable">
+    <End Type="bilgiSistemiModel.der" Role="der" Multiplicity="0..1" />
+    <End Type="bilgiSistemiModel.not" Role="not" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="der">
+        <PropertyRef Name="ders_kodu" />
+      </Principal>
+      <Dependent Role="not">
+        <PropertyRef Name="ders_kodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

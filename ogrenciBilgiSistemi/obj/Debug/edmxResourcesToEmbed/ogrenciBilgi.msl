@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bilgiSistemiModelStoreContainer" CdmEntityContainer="bilgiSistemiEntities">
+    <EntitySetMapping Name="alınandersler">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.alınandersler">
+        <MappingFragment StoreEntitySet="alınandersler">
+          <ScalarProperty Name="ders_kodu" ColumnName="ders_kodu" />
+          <ScalarProperty Name="ogrNo" ColumnName="ogrNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bolums">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.bolum">
+        <MappingFragment StoreEntitySet="bolum">
+          <ScalarProperty Name="o_id" ColumnName="o_id" />
+          <ScalarProperty Name="bolum_adi" ColumnName="bolum_adi" />
+          <ScalarProperty Name="bolum_kodu" ColumnName="bolum_kodu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ders">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.der">
+        <MappingFragment StoreEntitySet="ders">
+          <ScalarProperty Name="egitmen_id" ColumnName="egitmen_id" />
+          <ScalarProperty Name="sinif" ColumnName="sinif" />
+          <ScalarProperty Name="kredi" ColumnName="kredi" />
+          <ScalarProperty Name="ders_adi" ColumnName="ders_adi" />
+          <ScalarProperty Name="ders_kodu" ColumnName="ders_kodu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="devamsizliks">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.devamsizlik">
+        <MappingFragment StoreEntitySet="devamsizlik">
+          <ScalarProperty Name="ders_kodu" ColumnName="ders_kodu" />
+          <ScalarProperty Name="devamsiz" ColumnName="devamsiz" />
+          <ScalarProperty Name="ogrNo" ColumnName="ogrNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="egitmen">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.egitman">
+        <MappingFragment StoreEntitySet="egitmen">
+          <ScalarProperty Name="egitmen_kodu" ColumnName="egitmen_kodu" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kullanicis">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.kullanici">
+        <MappingFragment StoreEntitySet="kullanici">
+          <ScalarProperty Name="egitmen_kod" ColumnName="egitmen_kod" />
+          <ScalarProperty Name="ogrenci_no" ColumnName="ogrenci_no" />
+          <ScalarProperty Name="egitmen_sifre" ColumnName="egitmen_sifre" />
+          <ScalarProperty Name="ogrenci_sifre" ColumnName="ogrenci_sifre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nots">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.not">
+        <MappingFragment StoreEntitySet="not">
+          <ScalarProperty Name="ders_kodu" ColumnName="ders_kodu" />
+          <ScalarProperty Name="but" ColumnName="but" />
+          <ScalarProperty Name="final" ColumnName="final" />
+          <ScalarProperty Name="vize" ColumnName="vize" />
+          <ScalarProperty Name="ogrNo" ColumnName="ogrNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ogrencis">
+      <EntityTypeMapping TypeName="bilgiSistemiModel.ogrenci">
+        <MappingFragment StoreEntitySet="ogrenci">
+          <ScalarProperty Name="bolum" ColumnName="bolum" />
+          <ScalarProperty Name="sinif" ColumnName="sinif" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="numara" ColumnName="numara" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
