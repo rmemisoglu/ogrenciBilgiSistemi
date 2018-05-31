@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABFEC69F-152B-4B14-B744-9E899ACCCCB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ogrenciBilgiSistemi</RootNamespace>
+    <AssemblyName>ogrenciBilgiSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alınandersler.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bolum.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="der.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dersEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersEkle.Designer.cs">
+      <DependentUpon>dersEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersSecim.Designer.cs">
+      <DependentUpon>dersSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="devamsizlik.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="devamsizlikBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devamsizlikBilgi.Designer.cs">
+      <DependentUpon>devamsizlikBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="devamsizlikEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devamsizlikEkle.Designer.cs">
+      <DependentUpon>devamsizlikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egitman.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="egitmenEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egitmenEkle.Designer.cs">
+      <DependentUpon>egitmenEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egitmenGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egitmenGiris.Designer.cs">
+      <DependentUpon>egitmenGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egitmengirissayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egitmengirissayfası.Designer.cs">
+      <DependentUpon>egitmengirissayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="not.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="notEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notEkle.Designer.cs">
+      <DependentUpon>notEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.cs">
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciBilgi.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenciBilgi.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciBilgi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenciBilgi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciBilgi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenciBilgi.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciEkle.Designer.cs">
+      <DependentUpon>ogrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciGiris.Designer.cs">
+      <DependentUpon>ogrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencigirissayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencigirissayfasi.Designer.cs">
+      <DependentUpon>ogrencigirissayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sınavNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sınavNot.Designer.cs">
+      <DependentUpon>sınavNot.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dersEkle.resx">
+      <DependentUpon>dersEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersSecim.resx">
+      <DependentUpon>dersSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devamsizlikBilgi.resx">
+      <DependentUpon>devamsizlikBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devamsizlikEkle.resx">
+      <DependentUpon>devamsizlikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egitmenEkle.resx">
+      <DependentUpon>egitmenEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egitmenGiris.resx">
+      <DependentUpon>egitmenGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egitmengirissayfası.resx">
+      <DependentUpon>egitmengirissayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notEkle.resx">
+      <DependentUpon>notEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciEkle.resx">
+      <DependentUpon>ogrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciGiris.resx">
+      <DependentUpon>ogrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencigirissayfasi.resx">
+      <DependentUpon>ogrencigirissayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sınavNot.resx">
+      <DependentUpon>sınavNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="ogrenciBilgi.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ogrenciBilgi.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ogrenciBilgi.edmx.diagram">
+      <DependentUpon>ogrenciBilgi.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bilgiSistemi.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bilgiSistemi_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>bilgiSistemi.mdf</DependentUpon>
+    </Content>
+    <None Include="bin\Debug\7d5b67b70c060b1f4b1cac9d642d75ce.png" />
+    <None Include="bin\Debug\rsz_7d5b67b70c060b1f4b1cac9d642d75ce.png" />
+    <Content Include="ogrenciBilgi.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ogrenciBilgi.Context.cs</LastGenOutput>
+      <DependentUpon>ogrenciBilgi.edmx</DependentUpon>
+    </Content>
+    <Content Include="ogrenciBilgi.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ogrenciBilgi.edmx</DependentUpon>
+      <LastGenOutput>ogrenciBilgi.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

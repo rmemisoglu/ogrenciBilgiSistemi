@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="387c048d80504228b36f3c82d3155ed6" Name="Diagram1">
+        <EntityTypeShape EntityType="bilgiSistemiModel.alınandersler" Width="1.5" PointX="8.25" PointY="5.875" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.bolum" Width="1.5" PointX="8.25" PointY="2.375" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.der" Width="1.5" PointX="3" PointY="5.5" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.devamsizlik" Width="1.5" PointX="5.25" PointY="10.125" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.egitman" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.kullanici" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.not" Width="1.5" PointX="5.25" PointY="4.25" />
+        <EntityTypeShape EntityType="bilgiSistemiModel.ogrenci" Width="1.5" PointX="6" PointY="0.75" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_alınandersler_ToTable" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_alınandersler_ToTable_1" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_bolum_Toogrenci" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_ders_ToTable_1" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_devamsizlik_ToTable" />
+        <AssociationConnector Association="bilgiSistemiModel.FK_not_ToTable" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
